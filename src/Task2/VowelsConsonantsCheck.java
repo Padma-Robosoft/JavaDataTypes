@@ -2,7 +2,7 @@ package Task2;
 
 import java.util.Scanner;
 
-public class VowelsConsonantsCheck {
+public class VowelsConsonantsCheck{
     public static void main(String[] args) {
 
         Scanner sc= new Scanner(System.in);

@@ -8,14 +8,14 @@ public class ProductOperation {
         double[] price={999.90, 499.99, 299.99};
         boolean[] inStock={true, false, true};
 
-        double TotalStockValue=calculateTotalStockValue(price,inStock);
-        System.out.printf("The value of total price inStock is :$%.2f%n",TotalStockValue);
+        double totalStockValue=calculateTotalStockValue(price,inStock);
+        System.out.println("The value of total price inStock is :"+totalStockValue);
 
-        String ExpensiveProduct=mostExpensiveProduct(name,price);
-        System.out.printf(ExpensiveProduct);
+        String expensiveProduct=mostExpensiveProduct(name,price);
+        System.out.printf(expensiveProduct);
 
-        int ProductAbove400=productCountAbove400(price);
-        System.out.printf("\nThe count of products above $400 is: %d%n",ProductAbove400);
+        int productAbove400=productCountAbove400(price);
+        System.out.printf("\nThe count of products above $400 is: %d%n",productAbove400);
 
     }
     public static double calculateTotalStockValue(double[] price, boolean[] inStock){
@@ -35,8 +35,10 @@ public class ProductOperation {
             if(price[i]>maxPrice){
                 maxPrice=price[i];
                 index=i;
-            }i++;
-        }return "The most expensive product is: " + name[index] + ", Price: $" + maxPrice;
+            }
+            i++;
+        }
+        return "The most expensive product is: " + name[index] + ", Price: $" + maxPrice;
     }
 
     public static int productCountAbove400(double[] price){

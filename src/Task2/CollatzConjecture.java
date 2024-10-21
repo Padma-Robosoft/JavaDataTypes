@@ -14,7 +14,6 @@ public class CollatzConjecture {
             System.out.println("Please enter a Valid Positive Integer");
         }else{
             System.out.println("Collatz Conjecture Sequence Starting from: "+n);
-
             while(n!=1) {
                 System.out.print(n + " ");
                 if (n % 2 == 0) {
