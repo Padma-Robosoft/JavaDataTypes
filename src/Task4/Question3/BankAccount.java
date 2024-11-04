@@ -1,6 +1,6 @@
 package Task4.Question3;
 
-class BankAccount {
+ class BankAccount {
     private long accountNumber;
     private double balance;
 
@@ -14,29 +14,27 @@ class BankAccount {
         if (amount > 0) {
             System.out.println("The amount  Deposited is: "+amount);
             balance += amount;
-
         }
         else{
             System.out.println("The deposit amount should be Positive");
         }
-
     }
 
     public void withdraw(double amount){
         if(amount>0&&amount<=balance){
             System.out.println("The amount withdraw is: "+amount);
             balance-=amount;
-           //
         }
         else{
             System.out.println("Insufficient bank balance");
         }
     }
+
     public double getBalance() {
         return balance;
     }
 
-    public double getAccountNumber() {
+    public long getAccountNumber() {
         return accountNumber;
     }
 }

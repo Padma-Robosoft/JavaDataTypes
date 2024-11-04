@@ -5,6 +5,6 @@ public class CounterMain {
         Counter c1=new Counter();
         Counter c2=new Counter();
         Counter c3=new Counter();
-        System.out.println("The Current Count is: "+Counter.getCount());
+        System.out.println("The Current Count is: "+c3.getCount());
     }
 }

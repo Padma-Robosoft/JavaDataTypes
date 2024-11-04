@@ -21,10 +21,10 @@ public class DuplicateChecker {
             }
         }
         if(hasDuplicate){
-            System.out.println("This list has a dublicate item");
+            System.out.println("This list has a duplicate item");
         }
         else{
-            System.out.println("This list doesn't have a dublicate item");
+            System.out.println("This list doesn't have a duplicate item");
         }
 
     }

@@ -10,6 +10,7 @@ package Task4.Question4;
      }
 
      double area(){
+
          return length*breadth;
      }
 }
