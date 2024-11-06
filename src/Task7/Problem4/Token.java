@@ -1,17 +1,18 @@
 package Task7.Problem4;
 
 public class Token {
-    private boolean active;
-
-    public Token(){
-        this.active=true;
+    private boolean isTokenActive;
+    Token() {
+        this.isTokenActive = true;
     }
-
-    public boolean isActive(){
-        return active;
+    public void setTokenActive(boolean tokenActive) {
+        isTokenActive = tokenActive;
     }
-
-    public void setActive(boolean active) {
-        this.active = active;
+    public void resetToken() {
+        this.isTokenActive = true;
+    }
+    @Override
+    public String toString() {
+        return isTokenActive ? "Active" : "Inactive";
     }
 }
