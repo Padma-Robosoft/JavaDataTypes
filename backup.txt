@@ -1,0 +1,2 @@
+hello
+Word count: 1

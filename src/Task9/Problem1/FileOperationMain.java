@@ -6,17 +6,18 @@ import java.io.IOException;
 
 public class FileOperationMain {
     public static void main(String[] args) {
-        FileOperation fileOperation=new FileOperation();
-        try {
-          fileOperation.createNewFile();
-          fileOperation.renameFile("File.txt");
-            fileOperation.wordCount();
-           // fileOperation.c();
+        FileOperation fileOperations=new FileOperation();
+        try{
+        // fileOperations.createFile();
+        //fileOperations.renameFile("Renamed.txt");
+           // fileOperations.wordCount();
+            fileOperations.copyToBackup();
+            fileOperations.deleteOriginalFiles();
         }
-        catch (Exception e) {
-            System.out.println(e.getMessage());
+        catch (IOException io){
+            System.out.println(io.getMessage());
         }
-        //fileOperation.writeFile("hello");
-
     }
 }
+
+
